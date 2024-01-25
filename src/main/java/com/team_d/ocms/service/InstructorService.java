@@ -19,6 +19,7 @@ public class InstructorService {
         return instructorRepository.save(request.getInstructor());
     }
     
+    
     public List<Instructor> getAllInstructors() {
         return instructorRepository.findAll();
     }

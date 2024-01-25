@@ -3,7 +3,6 @@ package com.team_d.ocms.repository;
 import com.team_d.ocms.dto.CourseCreateResponse;
 import com.team_d.ocms.entity.Instructor;
 import java.util.List;
-//import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -21,5 +20,5 @@ public interface InstructorRepository extends JpaRepository<Instructor, Long> {
   List<CourseCreateResponse> getCourseInfoByInstructorId(
     @Param("instructorId") Long instructorId
   );
-  // Add more query methods if needed
+
 }

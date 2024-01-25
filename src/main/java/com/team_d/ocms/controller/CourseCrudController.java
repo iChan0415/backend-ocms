@@ -31,11 +31,12 @@ public class CourseCrudController {
     @Autowired
     private InstructorRepository instructorRepository;
 
-    @PostMapping("/save")
-    public ResponseEntity<Instructor> saveCourseInstructor(@RequestBody CourseCreateRequest request) {
-        Instructor savedInstructor = instructorService.saveInstructorFromRequest(request);
-        return new ResponseEntity<>(savedInstructor, HttpStatus.CREATED);
-    }
+ @PostMapping("/save")
+public ResponseEntity<Instructor> saveCourseInstructor(@RequestBody CourseCreateRequest request) {
+    Instructor savedInstructor = instructorService.saveInstructorFromRequest(request);
+    return new ResponseEntity<>(savedInstructor, HttpStatus.CREATED);
+}
+
 
     @GetMapping("/instructors")
     public List<Instructor> getAllInstructorInfo() {

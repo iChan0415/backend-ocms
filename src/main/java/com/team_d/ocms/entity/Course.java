@@ -22,9 +22,4 @@ public class Course {
   private String description;
   private String courseFile;
   private String courseImage;
-public Long getId() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'getId'");
-}
-
 }

@@ -16,6 +16,12 @@ import lombok.ToString;
 public class CourseCreateRequest {
 
     private Instructor instructor;
+    
     private Course course;
+
+
+    public Instructor getInstructor() {
+        return this.instructor;
+    }
     
 }
